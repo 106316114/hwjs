@@ -44,7 +44,7 @@ background-image:url('https://truth.bahamut.com.tw/s01/201803/57abad8e8b2465f260
 
 <br>
 
-身分證字號: <input type="text" name="id">  
+身分證字號: <input type="text" name="身分證字號">  
 <script type="text/javascript">
  var a;
   a=id;
@@ -106,7 +106,6 @@ alert("我是警告框！！");
   隔離預防:
 
     <select name="隔離預防">
-
   <option value="none">無</option>
 
   <option value="空氣傳播">空氣傳播</option>
@@ -144,6 +143,8 @@ alert("我是警告框！！");
 <br>
 
 <input type="submit" value="送出資料">
+<br>
+
   <button onclick="myFunction()" type="button">Try it</button>
 <script>
 var patient= {"name":"Chalmers", "telecom":12345678,
@@ -153,9 +154,15 @@ alert(patient.name);
 alert(patient.telecom);
 alert(patient.gender);
 alert(patient.birthDate);
+  
 }
  </script>
-
+<input type="text" id="myText" value="">
+<button onclick="myFunction1()" type="button">getPatient</button>
+<script>
+var x = document.getElementById("myText").value;
+alert(x);
+ </script>
 </form>
 
 </body>
