@@ -35,7 +35,7 @@ background-image:url('https://truth.bahamut.com.tw/s01/201803/57abad8e8b2465f260
 
 <form id="orderForm1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post"  name="form1" >
 
-姓名: <input type="text" name="name" id="Fname" value="">
+姓名: <input type="text" id="Fname" name="name" value="">
 
 性別:
 
@@ -49,7 +49,7 @@ background-image:url('https://truth.bahamut.com.tw/s01/201803/57abad8e8b2465f260
 
 <br>
 
-聯絡電話: <input type="text" name="tele" id="telecom" value="">
+聯絡電話: <input type="text" id="telecom" name="tele" value="">
 
 <br>
 
@@ -130,7 +130,7 @@ background-image:url('https://truth.bahamut.com.tw/s01/201803/57abad8e8b2465f260
 
 </select>
 <br>
-<button onclick="checkForm" type="button">檢查資料</button>
+<button onclick="checkForm()" type="button">檢查資料</button>
 <script>
   function checkForm() {
     var x = document.getElementById("Fname").value ;
